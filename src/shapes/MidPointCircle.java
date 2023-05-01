@@ -42,6 +42,35 @@ public class MidPointCircle extends JFrame {
         points = DrawCircle(false);
     }
 
+    public static ArrayList<PointXY> CircleToPointsXY2(PointXY center, int radius)
+    {
+        ArrayList<PointXY> points = new ArrayList<PointXY>();
+        int x = 0;
+        int y = radius;
+        int p = 1 - radius;
+
+        // Draw the circle using Midpoint Circle Algorithm
+        while (x <= y) {
+            points.add(new PointXY(center.x + x, center.y + y));
+            points.add(new PointXY(center.x - x, center.y + y));
+            points.add(new PointXY(center.x + x, center.y - y));
+            points.add(new PointXY(center.x - x, center.y - y));
+            points.add(new PointXY(center.x + y, center.y + x));
+            points.add(new PointXY(center.x - y, center.y + x));
+            points.add(new PointXY(center.x + y, center.y - x));
+            points.add(new PointXY(center.x - y, center.y - x));
+            x++;
+
+            if (p < 0) {
+                p += 2 * x + 1;
+            } else {
+                y--;
+                p += 2 * (x - y) + 1;
+            }
+        }
+        return points;
+    }
+
     private ArrayList<PointXY> DrawCircle(boolean print)
     {
         points = new ArrayList<PointXY>();

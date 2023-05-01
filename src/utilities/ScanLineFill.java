@@ -64,7 +64,7 @@ public class ScanLineFill extends JFrame {
     {
         super.paint(graphics);
         DrawCircle();
-        //Fill(100, 100);
+        //ill(100, 100);
     }
 
 }

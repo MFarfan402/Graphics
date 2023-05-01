@@ -31,7 +31,6 @@ public class Translation extends JFrame implements Runnable {
         thread = new Thread(this);
         thread.start();
     }
-
     @Override
     public void run()
     {
