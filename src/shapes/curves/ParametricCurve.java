@@ -69,6 +69,23 @@ public class ParametricCurve extends JFrame {
         DrawLines(pointsXY);
     }
 
+    public static ArrayList<PointXY> DrawInfinite(int radius)
+    {
+        ArrayList<PointXY> pointsXY = new ArrayList<>();
+        int x, y;
+        for (int t = 0; t < 360; t++)
+        {
+            double radian = HelperFuncs.CalculateRad(t);
+            double cos = Math.cos(radian), sin = Math.sin(radian);
+
+            x = (int) ((radius * sin) / (1 + (cos * cos)));
+            y = (int) ((radius * sin * cos) / (1 + (cos * cos)));
+            pointsXY.add(new PointXY(x, y));
+        }
+        return pointsXY;
+    }
+
+
     private void DrawFlower()
     {
         ArrayList<PointXY> pointsXY = new ArrayList<>();
