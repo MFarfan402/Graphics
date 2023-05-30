@@ -293,9 +293,11 @@ public class Animation extends JFrame implements Runnable
     }
     public void PaintPlane()
     {
+        ArrayList<PointXY> points = new ArrayList<PointXY>();
         fillRectangle(planePoint, new PointXY(planePoint.x + 60, planePoint.y + 22), MyColor.plane);
         fillRectangle(new PointXY(planePoint.x, planePoint.y + 15), new PointXY(planePoint.x + 60, planePoint.y + 19), MyColor.planeBlue);
 
+        HelperFuncs.Translation(planePoint.x, planePoint.y, points);
         if (leftDirection)
         {
             drawTriangle(
