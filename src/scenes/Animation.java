@@ -490,5 +490,4 @@ public class Animation extends JFrame implements Runnable
         PaintClouds(Cloud.SecondCloud());
         PaintClouds(Cloud.ThirdCloud());
     }
-
 }

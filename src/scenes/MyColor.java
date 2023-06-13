@@ -16,4 +16,13 @@ public class MyColor {
     public static Color cabinClear = new Color(195, 200, 203);
     public static Color myGray = new Color(61, 61, 65);
     public static Color cabinBlue = new Color(7, 91, 132);
+    public static Color myYellow = new Color( 247, 220, 111 );
+
+
+    public static Color base = new Color( 135, 163, 152);
+    public static Color myYellow2 = new Color( 247, 220, 111 );
+    public static Color myYellow3 = new Color( 247, 220, 111 );
+    public static Color myYellow4 = new Color( 247, 220, 111 );
+    public static Color myYellow5 = new Color( 247, 220, 111 );
+    public static Color myYellow6 = new Color( 247, 220, 111 );
 }

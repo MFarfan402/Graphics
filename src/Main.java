@@ -1,5 +1,5 @@
 import proyection.*;
-import scenes.Animation;
+import scenes.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +8,10 @@ public class Main {
 //        new Orthogonal();
 //        new Foco();
 
-        new Rotation3D(false);
-        new Rotation3D(true);
+//        new Rotation3D(false);
+//        new Rotation3D(true);
+//        new Fill3D();
+
+        new Animation3D();
     }
 }
