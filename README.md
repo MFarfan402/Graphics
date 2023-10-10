@@ -13,3 +13,7 @@ You got this!
 
 With love,
 Mau!
+
+
+PD. Fill methods at utilities folder don't work as expected. 
+Please use the Fill methods that are available at scenes/projections.
